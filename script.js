@@ -1,14 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const nameInput = document.getElementById("nameInput");
-  // Allow only letters, spaces, and dots; auto-uppercase conversion
+
 nameInput.addEventListener("input", () => {
-  // Keep only alphabets, spaces, and dots
-  nameInput.value = nameInput.value.replace(/[^a-zA-Z.\s]/g, "");
-
-  // Convert all to uppercase
+   nameInput.value = nameInput.value.replace(/[^a-zA-Z.\s]/g, "");
   nameInput.value = nameInput.value.toUpperCase();
-
-  // Prevent multiple consecutive spaces
   nameInput.value = nameInput.value.replace(/\s{2,}/g, " ");
 });
 
@@ -83,4 +78,5 @@ nameInput.addEventListener("input", () => {
       alert("Developer tools are disabled on this page.");
     }
   });
+
 
