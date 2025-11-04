@@ -1,5 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
   const nameInput = document.getElementById("nameInput");
+  // Allow only letters, spaces, and dots; auto-uppercase conversion
+nameInput.addEventListener("input", () => {
+  // Keep only alphabets, spaces, and dots
+  nameInput.value = nameInput.value.replace(/[^a-zA-Z.\s]/g, "");
+
+  // Convert all to uppercase
+  nameInput.value = nameInput.value.toUpperCase();
+
+  // Prevent multiple consecutive spaces
+  nameInput.value = nameInput.value.replace(/\s{2,}/g, " ");
+});
+
   const generateBtn = document.getElementById("generateBtn");
   const downloadBtn = document.getElementById("downloadBtn");
   const certificateWrapper = document.getElementById("certificateWrapper");
@@ -71,3 +83,4 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Developer tools are disabled on this page.");
     }
   });
+
