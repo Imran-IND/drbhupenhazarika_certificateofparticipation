@@ -73,7 +73,7 @@ button:hover {
 /* name alignment */
 #participantName {
   position: absolute;
-  top: 52%; 
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 20px;
@@ -85,8 +85,18 @@ button:hover {
   letter-spacing: 1px;
 }
 
-#loadingText {
-  color: #444;
-  font-style: italic;
-  margin-top: 10px;
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+  #participantName {
+    top: 51%; /* adjust slightly upward */
+    font-size: 18px;
+  }
+}
+
+/* For mobile (480px and below) */
+@media (max-width: 480px) {
+  #participantName {
+    top: 51%; /* fine-tuned for smaller screens */
+    font-size: 10px;
+  }
 }
