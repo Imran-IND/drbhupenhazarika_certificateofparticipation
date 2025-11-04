@@ -97,6 +97,7 @@ button:hover {
 @media (max-width: 480px) {
   #participantName {
     top: 51%; /* fine-tuned for smaller screens */
-    font-size: 10px;
+    font-size: 08px;
   }
 }
+
