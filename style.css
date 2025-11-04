@@ -85,6 +85,11 @@ button:hover {
   letter-spacing: 1px;
 }
 
+
+#nameInput {
+  text-transform: uppercase;
+}
+
 /* For tablets (768px and below) */
 @media (max-width: 768px) {
   #participantName {
@@ -100,4 +105,5 @@ button:hover {
     font-size: 08px;
   }
 }
+
 
