@@ -64,7 +64,7 @@ nameInput.addEventListener("input", () => {
 });
 
   
-/*  document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 
   document.addEventListener('keydown', event => {
@@ -77,7 +77,8 @@ nameInput.addEventListener("input", () => {
       event.preventDefault();
       alert("Developer tools are disabled on this page.");
     }
-  });*/
+  });
+
 
 
 
